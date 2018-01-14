@@ -4,7 +4,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-	<title>Yu-Hsiang Lin</title> 
+	<title>Yu-Hsiang Lin - Projects</title> 
 
 	<style type="text/css">
 		body {
@@ -15,11 +15,11 @@
 
 		ul {
 			list-style-type: none;
-			padding-left: 2em;
+			padding-left: 0em;
 		}
 
-		h2 {
-			margin-top: 2em;
+		ul.a{
+			padding-left: 2em;
 		}
 
 		div.contactbox {
@@ -28,37 +28,103 @@
 	</style>
 </head>
 
-<body> 
+<body>
 
-
-<div style="width: 800px" align="left">
-	<table> 
-		<tbody>
-			<tr> 
-				<td>
-					<div style="padding: 5px">
-						<img src="./home_files/profile.jpg" width="200">
-					</div>
-				</td>
-				<td>
-					<div class="contactbox">
-						<p><h1>Yu-Hsiang Lin</h1></p>
-						<p>
-							yuhsianl@andrew.cmu.edu<br>
-							<a href="https://www.linkedin.com/in/yhl2997925/">https://www.linkedin.com/in/yhl2997925/</a><br>
-							<a href="https://github.com/yuhsianglin">https://github.com/yuhsianglin</a>
-						</p>
-					</div>
-				</td>
-			</tr> 
-		</tbody>
-	</table>
+<div id="menu" align="center">
+	<p><h3><a href="./index.html">Home</a> &nbsp;|&nbsp;
+	<a href="./researchexp.html">Experiences</a> &nbsp;|&nbsp;
+	<a href="./projects.html">Projects</a> &nbsp;|&nbsp;
+	<a href="./publications.html">Publications</a> &nbsp;|&nbsp;
+	<a href="education.html">Education</a> &nbsp;|&nbsp;
+	<a href="./honors.html">Honors</a> &nbsp;|&nbsp;
+	<a href="./presentations.html">Presentations</a></h3></p>
 </div>
 
+<br>
 
-<p style="text-align: justify">
-	I am a <a href="https://mcds.cs.cmu.edu/">Master of Computational Data Science</a> student in the <a href="http://www.scs.cmu.edu/">School of Computer Science</a> at <a href="http://www.cmu.edu/index.shtml">Carnegie Mellon University</a>.
-</p>
+<p><h1>Projects</h1></p>
+
+
+<ul>
+
+<hr>
+<li>
+<h2>Semantic Adversarial Autoencoder for Zero-Shot Learning</h2>
+Oct 2017 - Dec 2017. Conducted in course lectured by <a href="http://www.cs.cmu.edu/~rsalakhu/">Prof. Ruslan Salakhutdinov</a>. With <a href="https://www.linkedin.com/in/henryzhou0333/">Kangyan Zhou</a> and Shihui Li. <br><br>
+<b>Python | TensorFlow</b> <br>
+[<a href="./projects_files/2017_saae.pdf">pdf</a>] [<a href="https://github.com/yuhsianglin/SAAE">code</a>] <br><br>
+<ul class="a">Developed the novel architecture that incorporates the generative adversarial net (GAN) into the semantic autoencoder for the zero-shot learning.</ul>
+<ul class="a">Outperformed the semantic autoencoder on the generalized zero-shot image classification tasks on the benchmark datasets, CUB 200 and AwA.</ul> <br>
+</li>
+
+<hr>
+<li>
+<h2>Learning from Few Labeled Data on Large Knowledge Graph</h2>
+Nov 2017 - Dec 2017. <br><br>
+<b>Python | Apache Spark</b> <br><br>
+<ul class="a">Achieved classification of large amount of unlabeled data with only 5% of the data labeled by using the Gaussian random field model.</ul>
+<ul class="a">Efficiently implemented the label propagation algorithm in Apache Spark and applied to the big dataset, the Freebase knowledge graph, with over 300,000 entries and 2 million relations.</ul> <br>
+</li>
+
+<hr>
+<li>
+<h2>Multi-Threaded Web Proxy for HTTP service</h2>
+Jul 2017 - Aug 2017. <br><br>
+<b>C | Linux | TCP/IP</b> <br><br>
+<ul class="a">Implemented a HTTP proxy that serves contents from the remote servers to the client web browsers.</ul>
+<ul class="a">Enhanced the performance by supporting multi-threaded concurrent connections and LRU caching of web contents.</ul> <br>
+</li>
+
+<hr>
+<li>
+<h2>Robust Newton Optimizers for Deep Learning</h2>
+May 2016 - Jun 2017. Advised by <a href="https://www.csie.ntu.edu.tw/~cjlin/">Prof. Chih-Jen Lin</a>. With Chien-Chih Wang, Kent Loong Tan, Chun-Ting Chen, <a href="http://www.keerthis.com/">S. Sathiya Keerthi</a>, <a href="https://research.fb.com/people/mahajan-dhruv/">Dhruv Mahajan</a>, <a href="https://www.microsoft.com/en-us/research/people/ssrajan/">S. Sundararajan</a> <br><br>
+<b>MATLAB | Python</b> <br><br>
+<ul class="a">Designed the Newton method optimizer for deep neural nets, exploiting the data structure manipulations to reduce the overhead and increase the efficiency, tested and proven by the profiling tool.</ul>
+<ul class="a">Reduced the bottleneck memory consumption from O(n^2) to O(n) through analyzing the backpropagation procedure and decomposing the Jacobian matrix into the compositional blocks.</ul>
+<ul class="a">Implemented stochastic gradient descent (SGD) optimizer with adaptive learning rate and momentum, supporting weight decay and early stopping.</ul> <br>
+</li>
+
+<hr>
+<li>
+<h2>Numerical Library for Astrophysics Data</h2>
+Mar 2013 - Jan 2016. Advised by <a href="https://lecospa.ntu.edu.tw/person/pisin-chen/">Prof. Pisin Chen</a>. <br><br>
+<b>Mathematica | Fortran | CAMB</b> <br>
+[<a href="./projects_files/2016_init_cond.pdf">pdf</a>] [<a href="https://github.com/yuhsianglin/TwoFieldPerturbation">code</a>] <br><br>
+<ul class="a">Developed the numerical library to solve the non-linear systems of gravitational perturbations.</ul>
+<ul class="a">Improved the compatibility of the open-source science code, <a href="http://camb.info/">CAMB</a>, by adding the interface for non-parametrized data and the interpolating function.</ul> <br>
+</li>
+
+<hr>
+<li>
+<h2>Accounting System for Personal Finance</h2>
+Oct 2014 - Jan 2015. <br><br>
+<b>Mathematica</b> <br>
+[<a href="https://github.com/yuhsianglin/Accounting">code</a>] <br><br>
+<ul class="a">Provides an simple scripting interface for keeping a daily ledger of personal financial activities.</ul>
+<ul class="a">Generates financial statement (income statement, changes in equity, balance sheet, comparative balance sheet, statement of cash flows) using the data from the ledger.</ul> <br>
+</li>
+
+<hr>
+<li>
+<h2>Platform Game on Digital System</h2>
+Jun 2005 - Sep 2005. <br><br>
+<b>Verilog | FPGA</b> <br><br>
+<ul class="a">Designed the video platform game on the field-programmable gate array (FPGA) using the hardware description language, Verilog.</ul> <br>
+</li>
+
+<hr>
+<li>
+<h2>Artificial Intelligence for Gomoku</h2>
+Sep 2002 - Jan 2003. <br><br>
+<b>C++</b> <br><br>
+<ul class="a">Designed the Gomoku game move search algorithm, which utilized the alpha-beta pruning to efficiently find the optimal move within the search depth.</ul>
+<ul class="a">Improved the move choice by having the program play with itself for multiple iterations and adjusting the evaluation function.</ul>
+<ul class="a">Won the 3rd place among about 30 teams in the final competition.</ul> <br>
+</li>
+
+
+</ul>
 
 </body>
 
