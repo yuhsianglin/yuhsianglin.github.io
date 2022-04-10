@@ -22,6 +22,11 @@
 			padding-left: 2em;
 		}
 
+		ul.b{
+			list-style-type: disc;
+			padding-left: 2em;
+		}
+
 		div.contactbox {
 			margin-left: 1em;
 		}
@@ -31,13 +36,13 @@
 <body>
 
 <div id="menu" align="center">
-	<p><h3><a href="./index.html">Home</a> &nbsp;|&nbsp;
-	<a href="./experiences.html">Experiences</a> &nbsp;|&nbsp;
-	<a href="./projects.html">Projects</a> &nbsp;|&nbsp;
-	<a href="./publications.html">Publications</a> &nbsp;|&nbsp;
-	<a href="./activities.html">Professional Activities</a> &nbsp;|&nbsp;
-	<a href="./education.html">Education</a> &nbsp;|&nbsp;
-	<a href="./honors.html">Honors</a></h3></p>
+    <p><h3>
+    <a href="./index.html">Home</a> &nbsp;|&nbsp;
+    <a href="./experiences.html">Experiences</a> &nbsp;|&nbsp;
+    <a href="./projects.html">Projects</a> &nbsp;|&nbsp;
+    <a href="./publications.html">Publications</a> &nbsp;|&nbsp;
+    <a href="./activities.html">Professional Activities</a>
+    </h3></p>
 </div>
 
 <br>
@@ -47,121 +52,204 @@
 
 <ul>
 
+
+
+<li>
+<h3>Indexing New Product Features in Search</h3>
+2022<br><br>
+<b>Scala | Spark</b><br><br>
+<ul class="b">
+<li>Published the new product features to the search engine index by creating an end-to-end pipeline from feature production, job scheduling, data warehouse registration, to index publication.</li>
+</ul><br>
+</li>
+
+
+
+<hr>
+<li>
+<h3>Predicting Customer Actions for Low-Resource Items</h3>
+2021<br><br>
+<b>Python | PyTorch</b><br><br>
+<ul class="b">
+<li>Alleviated the problem of lacking action data for cold-start (low-resource) items by introducing item metadata graph to transfer action (e.g. clicks) knowledge from popular (high-resource) items to cold-start items, improving the ROC-AUC by 18% against the counting-based baseline.</li>
+</ul><br>
+</li>
+
+
+
+<hr>
+<li>
+<h3>Online Product Search Ranking Feature for Long-Tail Queries</h3>
+2020 - 2021<br><br>
+<b>Python | TensorFlow</b><br><br>
+<ul class="b">
+<li>Deep dived to reveal two causes impacting model performance: failure in generalizing to queries with tokens unseen in training, and imbalance of the number of training instances in head and tail queries.</li>
+<li>Introduced vocabulary-indexed embedding to replace the hash-indexed embedding, improving the PR-AUC by 2.4% for head products and tail queries.</li>
+</ul><br>
+</li>
+
+
+
+<hr>
+<li>
+<h3>Generating Queries for Cold-Start Products</h3>
+2019 - 2020<br><br>
+<b>Python | TensorFlow</b><br><br>
+<ul class="b">
+<li>Proposed and implemented novel multi-encoder neural language generative models to predict search queries based on product information, bringing 6.07% gain in new product sales.</li>
+<li>Integrated the query generation model into AWS SageMaker by making a new server-container system that interacts with SageMaker API via HTTP messaging, enabling deployment of models trained outside of SageMaker.</li>
+</ul><br>
+</li>
+
+
+
+<hr>
+<li>
+<h3>New Product Search Metrics for A/B Testing</h3>
+2019 - 2020<br><br>
+<b>Python | Spark | Shell</b><br><br>
+<ul class="b">
+<li>Built the data pipeline that generates and analyzes daily worldwide customer search data on new products in any online A/B testing, used by all teams across Amazon to make launch decisions for new services.</li>
+</ul><br>
+</li>
+
+
+
 <hr>
 <li>
 <h3>Choosing Transfer Languages for Cross-Lingual Learning</h3>
-Sep 2018 - May 2019. Advised by <a href="http://www.phontron.com/">Graham Neubig</a>. With <a href="https://www.linkedin.com/in/yuyan-amber-zhang/">Yuyan Zhang</a>, <a href="https://www.linkedin.com/in/chian-yu-pauline-chen-a1a5b9b4/">Chian-Yu Chen</a>, <a href="https://www.linkedin.com/in/lee-jean/">Jean Lee</a>, <a href="https://www.linkedin.com/in/ziruil/">Zirui Li</a>, <a href="https://www.linkedin.com/in/mengzhou-xia-938845105/">Mengzhou Xia</a>, <a href="https://shrutirij.github.io/">Shruti Rijhwani</a>, <a href="https://jxhe.github.io/">Junxian He</a>, Zhisong Zhang, Xuezhe Ma, <a href="http://www.cs.cmu.edu/~aanastas/">Antonios Anastasopoulos</a>, and Patrick Littell.<br><br>
-<b>Python</b><br><br>
+2018 - 2019. Advised by <a href="http://www.phontron.com/">Graham Neubig</a>. With <a href="https://www.linkedin.com/in/yuyan-amber-zhang/">Yuyan Zhang</a>, <a href="https://www.linkedin.com/in/chian-yu-pauline-chen-a1a5b9b4/">Chian-Yu Chen</a>, <a href="https://www.linkedin.com/in/lee-jean/">Jean Lee</a>, <a href="https://www.linkedin.com/in/ziruil/">Zirui Li</a>, <a href="https://www.linkedin.com/in/mengzhou-xia-938845105/">Mengzhou Xia</a>, <a href="https://shrutirij.github.io/">Shruti Rijhwani</a>, <a href="https://jxhe.github.io/">Junxian He</a>, Zhisong Zhang, Xuezhe Ma, <a href="http://www.cs.cmu.edu/~aanastas/">Antonios Anastasopoulos</a>, and Patrick Littell.<br><br>
+<b>Python</b><br>
 [<a href="./publications_files/2019_choose.pdf">pdf</a>] [<a href="https://github.com/neulab/langrank">code</a>]<br><br>
-<ul class="a">Proposed a ranking framework to select the optimal transfer languages for low-resource NLP tasks based on typological information and corpus statistics.</ul>
-<ul class="a">Improve the NDCG by 84% in ranking the best transfer languages for machine translation and POS tagging over any single most informative language or dataset attribute.</ul><br>
+<ul class="b">
+<li>Proposed a ranking framework to select the optimal transfer languages for low-resource NLP tasks based on typological information and corpus statistics.</li>
+<li>Improve the NDCG by 84% in ranking the best transfer languages for machine translation and POS tagging over any single most informative language or dataset attribute.</li>
+</ul><br>
 </li>
+
+
+
+<hr>
+<li>
+<h3>Two-Phase Ranking for Product Search</h3>
+2018<br><br>
+<b>Python</b><br><br>
+<ul class="b">
+<li>Developed the feature of customer engagement weighting in the machine learning model training and evaluation infrastructure.</li>
+<li>Enhanced the ranking quality of product search for Amazon Business by designing and training the new two-phase ranking model that raises NDCG by 0.71% and reduces the 99th percentile latency by 2.49%.</li>
+</ul><br>
+</li>
+
+
 
 <hr>
 <li>
 <h3>Fault Tolerance and Consistency in Distributed Systems</h3>
-Oct 2018 - Dec 2018.<br><br>
+2018<br><br>
 <b>Go</b><br><br>
-<ul class="a">Built replicated state machines using Raft consensus algorithm, implemented leader election, log replication and commit, and tested in environment where servers suffer concurrent failures and reconnections.</ul>
-<ul class="a">Constructed a thread-safe key-value storage system that utilizes client-side caching with lease managed by the storage servers to achieve scalability and consistency.</ul><br>
+<ul class="b">
+<li>Built replicated state machines using Raft consensus algorithm, implemented leader election, log replication and commit, and tested in environment where servers suffer concurrent failures and reconnections.</li>
+<li>Constructed a thread-safe key-value storage system that utilizes client-side caching with lease managed by the storage servers to achieve scalability and consistency.</li>
+</ul><br>
 </li>
+
+
 
 <hr>
 <li>
 <h3>Towards a General-Purpose Linguistic Annotation Backend</h3>
-Jan 2018 - May 2018. Advised by <a href="http://www.phontron.com/">Graham Neubig</a>. With <a href="https://www.linkedin.com/in/yuyan-amber-zhang/">Yuyan Zhang</a>, <a href="https://www.linkedin.com/in/chian-yu-pauline-chen-a1a5b9b4/">Chian-Yu Chen</a>, <a href="https://www.linkedin.com/in/lee-jean/">Jean Lee</a>, and <a href="https://www.linkedin.com/in/ziruil/">Zirui Li</a>.<br><br>
-<b>Python | TensorFlow | Flask</b><br><br>
+2018. Advised by <a href="http://www.phontron.com/">Graham Neubig</a>. With <a href="https://www.linkedin.com/in/yuyan-amber-zhang/">Yuyan Zhang</a>, <a href="https://www.linkedin.com/in/chian-yu-pauline-chen-a1a5b9b4/">Chian-Yu Chen</a>, <a href="https://www.linkedin.com/in/lee-jean/">Jean Lee</a>, and <a href="https://www.linkedin.com/in/ziruil/">Zirui Li</a>.<br><br>
+<b>Python | TensorFlow | Flask</b><br>
 [<a href="./publications_files/2018_phoneme.pdf">pdf</a>]<br><br>
-<ul class="a">Created RESTful API between transcription engine and annotation interface for language documentation.</ul>
-<ul class="a">The automatic phonemic transcription system was based on the Connectionist Temporal Classification objective function with the bidirectional LSTM recurrent neural network.</ul><br>
+<ul class="b">
+<li>Created RESTful API between transcription engine and annotation interface for language documentation.</li>
+<li>The automatic phonemic transcription system was based on the Connectionist Temporal Classification objective function with the bidirectional LSTM recurrent neural network.</li>
+</ul><br>
 </li>
+
+
 
 <hr>
 <li>
 <h3>Reinforcement Learning in Sequence-to-Sequence Models</h3>
-Jan 2018 - May 2018. Conducted in course lectured by <a href="http://www.phontron.com/">Graham Neubig</a>. With <a href="https://www.linkedin.com/in/haiphamthanh/">Hai Pham</a> and <a href="https://www.linkedin.com/in/shuxin-lin/">Shuxin Lin</a>.<br><br>
+2018. Conducted in course lectured by <a href="http://www.phontron.com/">Graham Neubig</a>. With <a href="https://www.linkedin.com/in/haiphamthanh/">Hai Pham</a> and <a href="https://www.linkedin.com/in/shuxin-lin/">Shuxin Lin</a>.<br><br>
 <b>Python | PyTorch</b><br>
 [<a href="./projects_files/2018_beam_search.pdf">pdf</a>] [<a href="https://github.com/yuhsianglin/AdaBeam">code</a>]<br><br>
-<ul class="a">Proposed two adaptive beam search methods using reinforcement learning and heuristic rules, reducing the beam search time by 53% on CCGbank dataset while retaining the same accuracy.</ul>
-<ul class="a">Implemented the reinforcement learning environment and adaptive beam search framework, with agent trained by the actor-critic method.</ul><br>
+<ul class="b">
+<li>Proposed two adaptive beam search methods using reinforcement learning and heuristic rules, reducing the beam search time by 53% on CCGbank dataset while retaining the same accuracy.</li>
+<li>Implemented the reinforcement learning environment and adaptive beam search framework, with agent trained by the actor-critic method.</li>
+</ul><br>
 </li>
+
+
 
 <hr>
 <li>
 <h3>Semantic Adversarial Autoencoder for Zero-Shot Learning</h3>
-Oct 2017 - Dec 2017. Conducted in course lectured by <a href="http://www.cs.cmu.edu/~rsalakhu/">Ruslan Salakhutdinov</a>. With <a href="https://www.linkedin.com/in/henryzhou0333/">Kangyan Zhou</a> and Shihui Li.<br><br>
+2017. Conducted in course lectured by <a href="http://www.cs.cmu.edu/~rsalakhu/">Ruslan Salakhutdinov</a>. With <a href="https://www.linkedin.com/in/henryzhou0333/">Kangyan Zhou</a> and Shihui Li.<br><br>
 <b>Python | TensorFlow</b><br>
 [<a href="./projects_files/2017_saae.pdf">pdf</a>] [<a href="https://github.com/yuhsianglin/SAAE">code</a>]<br><br>
-<ul class="a">Developed the novel architecture that incorporates the generative adversarial net (GAN) into the semantic autoencoder for the zero-shot learning.</ul>
-<ul class="a">Outperformed the semantic autoencoder on the generalized zero-shot image classification tasks on the benchmark datasets, CUB 200 and AwA.</ul><br>
+<ul class="b">
+<li>Developed the novel architecture that incorporates the generative adversarial net (GAN) into the semantic autoencoder for the zero-shot learning.</li>
+<li>Outperformed the semantic autoencoder on the generalized zero-shot image classification tasks on the benchmark datasets, CUB 200 and AwA.</li>
+</ul><br>
 </li>
+
+
 
 <hr>
 <li>
 <h3>Learning from Few Labeled Data on Large Knowledge Graph</h3>
-Nov 2017 - Dec 2017.<br><br>
-<b>Python | Apache Spark</b><br><br>
-<ul class="a">Achieved classification of large amount of unlabeled data with only 5% of the data initially labeled by leveraging the Gaussian random field model.</ul>
-<ul class="a">Efficiently implemented the label propagation algorithm in Apache Spark and applied to the big dataset, the Freebase knowledge graph, with over 300,000 entries and 2 million relations.</ul><br>
+2017<br><br>
+<b>Python | Spark</b><br><br>
+<ul class="b">
+<li>Achieved classification of large amount of unlabeled data with only 5% of the data initially labeled by leveraging the Gaussian random field model.</li>
+<li>Efficiently implemented the label propagation algorithm in Apache Spark and applied to the big dataset, the Freebase knowledge graph, with over 300,000 entries and 2 million relations.</li>
+</ul><br>
 </li>
+
+
 
 <hr>
 <li>
 <h3>Multi-Threaded Web Proxy for HTTP service</h3>
-Jul 2017 - Aug 2017.<br><br>
+2017<br><br>
 <b>C | Linux | TCP/IP</b><br><br>
-<ul class="a">Implemented a HTTP proxy that serves contents from the remote servers to the client web browsers.</ul>
-<ul class="a">Enhanced the performance by supporting multi-threaded concurrent connections and LRU caching of web contents.</ul><br>
+<ul class="b">
+<li>Implemented a HTTP proxy that serves contents from the remote servers to the client web browsers.</li>
+<li>Enhanced the performance by supporting multi-threaded concurrent connections and LRU caching of web contents.</li>
+</ul><br>
 </li>
+
+
 
 <hr>
 <li>
-<h3>Robust Newton Optimizers for Deep Learning</h3>
-May 2016 - Jun 2017. Advised by <a href="https://www.csie.ntu.edu.tw/~cjlin/">Chih-Jen Lin</a>. With Chien-Chih Wang, Kent Loong Tan, Chun-Ting Chen, <a href="http://www.keerthis.com/">S. Sathiya Keerthi</a>, <a href="https://research.fb.com/people/mahajan-dhruv/">Dhruv Mahajan</a>, <a href="https://www.microsoft.com/en-us/research/people/ssrajan/">S. Sundararajan</a>.<br><br>
+<h3>Newton Method Optimization for Deep Learning</h3>
+2016 - 2017. Advised by <a href="https://www.csie.ntu.edu.tw/~cjlin/">Chih-Jen Lin</a>. With Chien-Chih Wang, Kent Loong Tan, Chun-Ting Chen, <a href="http://www.keerthis.com/">S. Sathiya Keerthi</a>, <a href="https://research.fb.com/people/mahajan-dhruv/">Dhruv Mahajan</a>, <a href="https://www.microsoft.com/en-us/research/people/ssrajan/">S. Sundararajan</a>.<br><br>
 <b>MATLAB | Python</b><br>
 [<a href="./publications_files/2018_dist_newton.pdf">pdf</a>] [<a href="https://www.csie.ntu.edu.tw/~cjlin/papers/dnn">suppl, code</a>]<br><br>
-<ul class="a">Designed the Newton method optimizer for deep neural nets, exploiting the data structure manipulations to reduce the overhead and increase the efficiency, tested and proven by the profiling tool.</ul>
-<ul class="a">Reduced the bottleneck memory consumption from O(n<sup>2</sup>) to O(n) through analyzing the backpropagation procedure and decomposing the Jacobian matrix into the compositional blocks.</ul>
-<ul class="a">Implemented stochastic gradient descent (SGD) optimizer with adaptive learning rate and momentum, supporting weight decay and early stopping.</ul><br>
+<ul class="b">
+<li>Designed the Newton method optimizer for deep neural nets, exploiting the data structure manipulations to reduce the overhead and increase the efficiency, tested and proven by the profiling tool.</li>
+<li>Reduced the bottleneck memory consumption from O(n<sup>2</sup>) to O(n) through analyzing the backpropagation procedure and decomposing the Jacobian matrix into the compositional blocks.</li>
+<li>Implemented stochastic gradient descent (SGD) optimizer with adaptive learning rate and momentum, supporting weight decay and early stopping.</li>
+</ul><br>
 </li>
+
+
 
 <hr>
 <li>
 <h3>Numerical Library for Astrophysics Data</h3>
-Mar 2013 - Jan 2016. Advised by <a href="https://lecospa.ntu.edu.tw/person/pisin-chen/">Pisin Chen</a>.<br><br>
+2013 - 2016. Advised by <a href="https://lecospa.ntu.edu.tw/person/pisin-chen/">Pisin Chen</a>.<br><br>
 <b>Mathematica | Fortran | CAMB</b><br>
 [<a href="./publications_files/2016_init_cond.pdf">pdf</a>] [<a href="https://github.com/yuhsianglin/TwoFieldPerturbation">code</a>]<br><br>
-<ul class="a">Developed the numerical library to solve the non-linear systems of gravitational perturbations.</ul>
-<ul class="a">Improved the compatibility of the open-source science code, <a href="http://camb.info/">CAMB</a>, by adding the interface for non-parametrized data and the interpolating function.</ul><br>
+<ul class="b">
+<li>Developed the numerical library to solve the non-linear systems of gravitational perturbations.</li>
+<li>Improved the compatibility of the open-source science code, <a href="http://camb.info/">CAMB</a>, by adding the interface for non-parametrized data and the interpolating function.</li>
+</ul><br>
 </li>
 
-<hr>
-<li>
-<h3>Accounting System for Personal Finance</h3>
-Oct 2014 - Jan 2015.<br><br>
-<b>Mathematica</b><br>
-[<a href="https://github.com/yuhsianglin/Accounting">code</a>]<br><br>
-<ul class="a">Provides an simple scripting interface for keeping a daily ledger of personal financial activities.</ul>
-<ul class="a">Generates financial statement (income statement, changes in equity, balance sheet, comparative balance sheet, statement of cash flows) using the data from the ledger.</ul><br>
-</li>
-
-<hr>
-<li>
-<h3>Platform Game on Digital System</h3>
-Jun 2005 - Sep 2005.<br><br>
-<b>Verilog | FPGA</b><br><br>
-<ul class="a">Designed the video platform game on the field-programmable gate array (FPGA) using the hardware description language, Verilog.</ul><br>
-</li>
-
-<hr>
-<li>
-<h3>Artificial Intelligence for Gomoku</h3>
-Sep 2002 - Jan 2003.<br><br>
-<b>C++</b><br><br>
-<ul class="a">Designed the Gomoku game move search algorithm, which utilized the alpha-beta pruning to efficiently find the optimal move within the search depth.</ul>
-<ul class="a">Improved the move choice by having the program play with itself for multiple iterations and adjusting the evaluation function.</ul>
-<ul class="a">Won the 3rd place among about 30 teams in the final competition.</ul><br>
-</li>
 
 
 </ul>
