@@ -54,6 +54,64 @@
 
 
 
+<hr>
+<li>
+<h3>LLM Instruction Following in Open-Ended Generation</h3>
+2024<br><br>
+<b>Python</b><br><br>
+<ul class="b">
+<li>Created the model-in-the-loop data pipeline and generated prompts and preference response pairs with self-instruct framework. Improved data quality by critique-and-revise, increasing correct labels by 4 times.</li>
+<li>Built instruction following capability such as keywords inclusion/exclusion and length constraint by supervised fine-tuning and alignment tuning (PPO and reward modeling, DPO), improving IFEval accuracy by 56% relatively.</li>
+</ul><br>
+</li>
+
+
+
+<hr>
+<li>
+<h3>Evaluating and Improving LLM Creative Writing Quality</h3>
+2023<br><br>
+<b>Python</b><br><br>
+<ul class="b">
+<li>Designed the single/multi-turn human evaluation datasets that measure model's creative writing quality in 6 dimensions. Led the human evaluation and established inter-annotator agreement with 0.46 Spearman coefficient.</li>
+<li>Developed the specialized prompting strategy for multi-turn dialog evaluation with LLM-as-a-judge for specific dimensions, making it a reliable proxy of human evaluation.</li>
+<li>Explored supervised fine-tuning with curriculum and achieved 61.5% win rate against the baseline in response quality judged by GPT-4.</li>
+</ul><br>
+</li>
+
+
+
+<hr>
+<li>
+<h3>Dialog-State-Aware Prompt Composer for LLM</h3>
+2023<br><br>
+<b>Python</b><br><br>
+<ul class="b">
+<li>Developed a two-level prompting system that first determine the user intent and then select relevant APIs and exemplars to compose the prompt based on the dialog history.</li>
+<li>Built the multi-turn dialog inference orchestrator that supports tool API calls and remote model server interface for experimentation and evaluation for the team.</li>
+</ul><br>
+</li>
+
+
+
+<hr>
+<li>
+<h3>Argument Filling Model in Multimodal Dialogs</h3>
+2022<br><br>
+<b>Python</b><br><br>
+<ul class="b">
+<li>In the task of selecting an object on the screen in a dialog for multimodal screen devices, designed the modeling of graceful exit (instead of returning wrong object) when no object on the screen matches user's request.</li>
+<li>Built and deployed byte pair encoding to the argument filling model, addressing the out-of-vocabulary issue and improving the object selection accuracy by 10.2%.</li>
+</ul><br>
+</li>
+
+
+
+
+
+
+
+<hr>
 <li>
 <h3>Indexing New Product Features in Search</h3>
 2022<br><br>
