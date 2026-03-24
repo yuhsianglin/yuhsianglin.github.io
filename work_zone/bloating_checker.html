@@ -360,7 +360,7 @@
     }
 
     async function askClaude(food, apiKey) {
-      const prompt = `Will eating ${food} cause bloating? Return only the final answer as "yes", "no", or "not sure", and give one reference link from the Internet. Your answer should be in the json format such as: {"answer": "yes", "link": "https://source.of.my.answer.com/answer_page.html"}`;
+      const prompt = `Will eating ${food} cause bloating? Return only the final answer as "Yes", "No", or "Not Sure", and give one reference link from the Internet. Your answer should be in the json format such as: {"answer": <Yes, No, or Not Sure>, "link": <the URL to the source of the answer, if web search was used; otherwise say None>}. Please do not include any explanation or text outside of the JSON format.`;
 
       debugPrompt.textContent = prompt;
       debugResponse.textContent = "";
